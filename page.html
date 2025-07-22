@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8f8f8;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background: #fff;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #f4b400;
+            font-style: italic;
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 50px 0;
+        }
+
+        .hero-text {
+            max-width: 500px;
+        }
+
+        .hero-text h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .hero-text p {
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .buttons button {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 30px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .purchase {
+            background: #f4b400;
+            color: #000;
+        }
+
+        .try {
+            background: #fff;
+            border: 1px solid #ddd;
+        }
+
+        .hero img {
+            max-width: 650px;
+            border-radius: 8px;
+        }
+        .products {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .products h2 {
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .product {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+        }
+
+        .product img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .product h3 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .product p {
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .product button {
+            padding: 8px 16px;
+            background: #f4b400;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        .about {
+            background: #fff;
+            padding: 40px;
+            margin: 40px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .about h2 {
+            margin-bottom: 15px;
+        }
+        footer {
+            background: #222;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+        }
+        @media (max-width: 768px) {
+            .hero {
+                text-align: center;
+            }
+
+            .hero img {
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">Apple<span>Used</span></div>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">MacBooks</a>
+                <a href="#">iPhones</a>
+                <a href="#">iPads</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container hero">
+        <div class="hero-text">
+            <h1>Premium Second-Hand Apple Products</h1>
+            <p>Get certified pre-owned MacBooks, iPhones, and iPads. Tested, reliable, and affordable.</p>
+            <div class="buttons">
+                <button class="purchase">Shop Now</button>
+                <button class="try">View Deals</button>
+            </div>
+        </div>
+        <img src="docu/i.png" alt="Apple Devices">
+    </div>
+
+    <div class="container products">
+        <h2>Our Best Deals</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="docu/macbook.webp"
+                    alt="MacBook">
+                <h3>MacBook Pro 2023</h3>
+                <p>₹89,999 - Like New</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="docu/i15.png"
+                    alt="iPhone">
+                <h3>iPhone 15</h3>
+                <p>₹59,999 - Excellent Condition</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="docu/iPad.webp" alt="iPad">
+                <h3>iPad 10th Gen</h3>
+                <p>₹29,999 - Good Condition</p>
+                <button>Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container about">
+        <h2>Why Choose Us?</h2>
+        <p>✅ All devices are thoroughly tested and certified.
+            ✅ 6 months warranty on every purchase.
+            ✅ Free shipping and easy returns.
+            ✅ Budget-friendly prices with premium quality.</p>
+    </div>
+
+    <footer>
+        &copy; 2025 AppleUsed. All Rights Reserved.
+    </footer>
+
+</body>
+
+</html>
